@@ -11,4 +11,4 @@ def total (from, to)
 end
 
 p total(1 , 10)
-p total(1 , 10) {|num| num**2} #block_given的狀況來了
+p total(1 , 10) {|num| num+3} #block_given的狀況來了
