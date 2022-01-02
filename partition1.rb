@@ -16,5 +16,4 @@ result = [1, 2, 3, 4].partition do |number|
   number.even?
 end
 
-p even
-p odd
+p result 
