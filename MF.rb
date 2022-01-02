@@ -1,9 +1,9 @@
-def location(iten. value)
+def location(item, value)
   #輸入
   sub_table = get_sub_table(item, value)
   #若無資料則異常
   if(sub_table.length==0)
-    raise MetricFu::AnalysisError, "The '#{item.to_s}' '#{valus.to_s}' does not have any rows in the analysis table"
+    raise ::AnalysisError, "The '#{item.to_s}' '#{valus.to_s}' does not have any rows in the analysis table"
   #若有資料則輸入
   else
     first_row = sub_table[0]
