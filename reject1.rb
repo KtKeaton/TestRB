@@ -4,7 +4,7 @@
 # end
 
 result = [1, 2, 3, 4].reject do |number|
-  number.even?
+  number.odd?
 end
 # 傳回"不是"偶數的
 p result
