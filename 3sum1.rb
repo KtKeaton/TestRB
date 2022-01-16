@@ -23,8 +23,8 @@ def three_sum(nums)
                 end
                 end
                 end
-                end
-                end
+        end
+end
                 elsif nums[i] + nums[left] + nums[right] > 0
                     right -= 1
                 else
