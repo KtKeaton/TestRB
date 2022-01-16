@@ -1,3 +1,5 @@
+# Enum迭代，給矩陣元素加上序號
+
 # index = 0
 # i1= ['a', 'b', 'c'].each do |letter|
 #   puts index

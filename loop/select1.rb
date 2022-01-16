@@ -1,3 +1,5 @@
+##選出雙數
+
 # result = []
 # [1, 2, 3, 4].each do |number|
 #   result << number if number.even?

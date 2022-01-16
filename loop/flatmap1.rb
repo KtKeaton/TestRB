@@ -1,3 +1,5 @@
+##Enum迭代，選出元素，組成新陣列
+
 # result = []
 # [1, 2, 3].each do |number|
 #   ['a', 'b', 'c'].each do |letter|
