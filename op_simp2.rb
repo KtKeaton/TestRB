@@ -9,5 +9,5 @@ end
 ## 可簡化為
 # item = ary && ary.first
 
-## 或是，當ary不是nil時才調用first，否則回傳nil
+## 或是，當ary不是nil時才呼叫first，否則回傳nil
 # item = ary&.first
