@@ -10,4 +10,3 @@ myloop do
     break if num > 100      # num超過100後結束loop
     num *= 2                # num乘以2
 end
-
