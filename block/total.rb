@@ -1,6 +1,6 @@
 def total(from, to)
     result = 0
-    from.upto(to) do |num|          # 處理從from到to的值
+    from.upto(to) do |num|          # 從小到大排列後，處理從from到to的值
         if block_given?             # 如果有block
             result += yield(num)    ## 累加block處理過的值
         else                        # 如果沒有
