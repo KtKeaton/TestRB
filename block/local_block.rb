@@ -5,8 +5,8 @@ x = 1               # 初始化
 y = 1               # 初始化
 ary = [1, 2, 3]
 
-ary.each do |x|     # 將x作為block變數
-    y = x           # 將x賦值給y
+ary.each do |x|     # 建立名為x的新block變數
+    y = x           # 將x賦值給y, 保留了最後呼叫block的值
 end
 
 p [x, y]            # 確認x與y的值
