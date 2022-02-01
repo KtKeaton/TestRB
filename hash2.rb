@@ -1,8 +1,5 @@
-Person.create(name: "John Doe", age: 27)
-
-def self.create(params)
-  @name = params[:name]
-  @age  = params[:age]
+# 雜湊循環
+nobel = {Name: "KMori", Catetory: "Medicine Prize"}
+nobel.each do |k, v|
+  puts "#{k}, #{v}"
 end
-
-p Person
