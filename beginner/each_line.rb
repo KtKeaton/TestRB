@@ -1,3 +1,4 @@
+# 逐行讀取檔案並印出
 file = File.open("homu.txt")
 begin
   file.each_line do |line|
