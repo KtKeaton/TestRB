@@ -9,7 +9,7 @@ class Vector
   end
 
   def scalar
-    Math.sqrt(x ** 2 + y ** 2)    #平方根
+    Math.sqrt(x ** 2 + y ** 2)    #平方根 #計算向量端點到原點的笛卡爾距離 #向量的長度
   end
 
   def <=> (other)                 #定義比較運算子
@@ -19,8 +19,8 @@ end
 
 v1 = Vector.new(2, 6)
 v2 = Vector.new(4, -4)
-puts v1         #=> #<Vector:0x000055a6d11794e0>
-puts v2         #=> #<Vector:0x000055a6d1179490>
+puts v1.scalar  #=> 6.324555320336759
+puts v2.scalar  #=> 5.656854249492381
 p v1 <=> v2     #=> 1
 p v1 < v2       #=> false
 p v1 > v2       #=> ture
