@@ -1,11 +1,10 @@
-# 存取器
-## 物件外部不能抓實體變數&變數值
 class HelloWorld
+  # 存取器的作用
+  ## 原本的getter與settter，分別定義了「實體方法name與name=」
+  ## 也就是 def name 不是 def self.name，所以不是類別方法
+  ## accessor讓「類別HelloWorld」及其新生實體，可以用「實體方法name與name=」
   attr_accessor :name 
-  # 原本的getter與settter，分別定義了「實體方法name與name=」
-  # 也就是 def name 不是 def self.name，所以不是類別方法
-  # accessor讓「類別HelloWorld」及其新生實體，可以用「實體方法name與name=」
-
+  
   def initialize(name = "實體方法=變數預設值")     # 初始化，需要生成實體變數，給新實體用
     @name = name
   end
@@ -18,13 +17,14 @@ class HelloWorld
     puts "I name is #{@name}"
   end
 
-  # 存取器取代以下兩個方法
-  # 這是getter
+  ## 存取器取代以下兩個方法
+  
+  ## 這是getter
   # def name            
   #     @name
   # end
 
-  # 這是setter
+  ## 這是setter
   # def name=(value)    
   #     @name = value
   # end
