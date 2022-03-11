@@ -30,5 +30,5 @@ end
 
 keaton = HelloWorld.new()           #生成新實體，傳入參數「初始化」之後才有實體變數用
 keaton.name = "重新給個名字"
-keaton.hello                        #使用hello方法，而不是讀取「name 屬性」，Ruby沒有屬性
-keaton.intro                        #使用intro方法，同上
+keaton.hello                        #使用hello實體方法，而不是讀取「name屬性」，Ruby沒有屬性
+keaton.intro                        #使用intro實體方法，同上
