@@ -4,7 +4,7 @@
 from = 10
 to = 20
 sum = 0
-  (to - from +1).times do |i|     #(20 - 10 + 1).times
+  (to - from +1).times do |i|     #(20 - 10 + 1).times #其中的 i 從0開始跳
     sum = sum + (i + from)
   end
 puts sum
@@ -13,7 +13,7 @@ puts sum
 from = 10
 to = 20
 sum = 0
-for i in from..to
+for i in from..to    #其中的 i 從0開始跳
   sum = sum + i
 end
 puts sum
