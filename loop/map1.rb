@@ -8,3 +8,5 @@ result = [1, 2, 3, 4].map do |number|
 end
 
 p result
+
+# a = ['a', 'b', 'c'].map { |i| puts i }
