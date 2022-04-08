@@ -14,7 +14,7 @@ class HelloWorld
   end
 
   def intro
-    puts "I name is #{@name}"
+    puts "My name is #{@name}"
   end
 
   ## 存取器取代以下兩個方法
