@@ -38,6 +38,6 @@ keaton = HelloWorld.new("舊名字")
 keaton.name
 
 # 若沒有setter，無法用「實體方法 name =」
-keaton.name = "重新給個名字"
+keaton.name = "新名字"              # 相當於 def name= 重新指定
 keaton.hello                        # 使用hello實體方法，而不是讀取「name屬性」，Ruby沒有屬性
 keaton.intro                        # 使用intro實體方法，同上
