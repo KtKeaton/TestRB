@@ -1,4 +1,6 @@
 class ATM
+  attr_reader :attr_names
+
   def initialize(balance)
     @balance = balance
   end
@@ -7,9 +9,9 @@ class ATM
     @balance = @balance + money if money > 0
   end
 
-  def balance
-    @balance
-  end
+  # def balance
+  #   @balance
+  # end
 
   def withdraw(money)
     if money > 0 && money <= @balance
