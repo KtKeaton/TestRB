@@ -1,19 +1,22 @@
 class ATM
-  def initialize(bankSave)
-    @bankSave = bankSave
+  def initialize(balance)
+    @balance = balance
   end
 
   def deposit(money)
-    @bankSave = @bankSave + money if money > 0
+    @balance = @balance + money if money > 0
   end
 
   def balance
-    @bankSave
+    @balance
   end
 
   def withdraw(money)
-    @bankSave = @bankSave - money
+    if money > 0 && money <= @balance
+      @balance = @balance - money
     return money
+    else
+      return 0
   end
 
 end
